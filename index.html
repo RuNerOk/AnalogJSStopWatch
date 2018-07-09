@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Секундомер</title>
+    </head>
+    <body>
+		00:00:00.00
+		<form class="clockform" name=clockform> 
+			
+			<input name=lap type=button value=" Круг " 
+onclick="newLAP()" style="font-size:15px; color: #000000; width: 85px;">
+		    <input name=clock size=10 value="00:00:00.00" style="font-size:13px; color: 
+#000000; width: 80px; height: 24px;">
+			<!--<div class="clock" size=10 style="font-size:13px; color: 
+#000000; width: 70px; height: 14px; "><span>00:00:00.00</span>
+			</div>-->
+<input name=starter type=button value="Старт" 
+onclick="findTIME()" style="font-size:13px; color: #000000; width: 360px;"> 
+</form>
+00:00:00.00 круг 1<br>
+00:00:00.00 круг 2<br>
+00:00:00.00 круг 3
+<div id="analogClock"> </div>
+<div id="secArrow"> </div>
+<div id="minArrow"> </div>
+  
+
+		<script type="text/javascript" src="js/stopwatch.js"></script>
+    </body>
+</html>
